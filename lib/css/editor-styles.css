@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
 /* Variables */
 :root {
     --editor-bg: #eee;
@@ -83,4 +85,55 @@ html, body {
     left: 0;
     right: 0;
     border: 1px solid var(--editor-border);
+}
+
+/* Editor Console Logs */
+.editor__console-logs {
+    padding: 10px;
+    list-style: none;
+}
+
+.editor__console-logs li pre {
+    font-size: .9em;
+    font-family: Inconsolata, sans-serif;
+}
+
+.ace_gutter {
+    border-left: 5px solid var(--editor-border);
+}
+
+.log--default {
+    color: #000;
+}
+
+.log--string {
+    color: #48BF0A;
+}
+
+.log--number {
+    color: #48BF0A;
+}
+
+.log--boolean {
+    color: blue;
+}
+
+.log--undefined {
+    color: grey;
+}
+
+.log--error {
+    color: red;
+}
+
+.log--object {
+    color: darkcyan;
+}
+
+.log--array {
+    color: darkblue;
+}
+
+.log--function {
+    color: yellow;
 }
